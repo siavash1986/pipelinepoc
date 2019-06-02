@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
-@Library('jenkins-common@master')
-
-StandardBuild {
+@Library('utils') import org.foo.Utilities
+def utils = new Utilities(this)
+node {
+  utils.mvn 'clean package'
 }
