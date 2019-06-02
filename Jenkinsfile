@@ -2,5 +2,5 @@
 
 @Library('jenkins-common@master')
 
-standardBuild {
+StandardBuild {
 }
